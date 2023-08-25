@@ -10,6 +10,6 @@ public class Frog{
   }
 
   public boolean overlaps(VisibleImage vehicleImage){
-    return false; //you need to change this
+    return frogImage.overlaps(vehicleImage);
   }
 }
