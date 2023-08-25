@@ -1,8 +1,3 @@
-public clas Frog{
-
-
+public class Frog{
   
-  public void Frog(){
-    
-  }
 }
