@@ -1,5 +1,7 @@
 import objectdraw.*;
 import java.awt.*;
+import java.awt.event.KeyListener;
+import java.awt.event.KeyEvent;
 
 public class Main extends WindowController implements KeyListener{
 
@@ -23,6 +25,8 @@ public class Main extends WindowController implements KeyListener{
 
    // This method currently just draws the highway.  You will have to add
    // instructions to create the frog and the Lane ActiveObjects.
+
+  
    
    public static void main(String[] args) { 
    new Main().startController(400,400); 
@@ -95,5 +99,16 @@ public class Main extends WindowController implements KeyListener{
    {
    
    }
-         
+ public void	keyPressed(KeyEvent e)
+  {
+    
+  }
+    public void	keyReleased(KeyEvent e)
+  {
+    
+  }
+   public void	keyTyped(KeyEvent e)
+  {
+    
+  }
 }
