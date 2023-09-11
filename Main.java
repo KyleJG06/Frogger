@@ -13,10 +13,10 @@ public class Main extends WindowController implements KeyListener{
    private static final double LINE_WIDTH = LANE_WIDTH / 10;
    
    // Constants defining the locations of the background components
-   private static final double HIGHWAY_LEFT = 50;
+   private static final double HIGHWAY_LEFT = 0;
    private static final double HIGHWAY_RIGHT = HIGHWAY_LEFT + HIGHWAY_LENGTH;
    private static final double HIGHWAY_TOP = 100;
-   private static final double HIGHWAY_BOTTOM = HIGHWAY_TOP + HIGHWAY_WIDTH;
+   private static final double HIGHWAY_BOTTOM = 600;
    
    // Constants describing the lines on the highway
    private static final double LINE_SPACING = LINE_WIDTH / 2;
@@ -25,11 +25,11 @@ public class Main extends WindowController implements KeyListener{
 
    // This method currently just draws the highway.  You will have to add
    // instructions to create the frog and the Lane ActiveObjects.
-
+    Frog jose;
   
    
    public static void main(String[] args) { 
-   new Main().startController(400,400); 
+   new Main().startController(800,600); 
 	} 
    
    public void begin()
@@ -57,6 +57,7 @@ public class Main extends WindowController implements KeyListener{
       }
       
       // ADD YOUR CODE TO CREATE THE FROG AND THE LANES
+     jose = new Frog(getImage("froggy.gif"), canvas);
            
    }
    
