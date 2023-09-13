@@ -5,6 +5,7 @@ import java.awt.*;
 public class Frog{
   private VisibleImage frogImage;
   private static final double FROG_HEIGHT = 48;
+  private int x, y;
 
 
   public Frog(Image i, DrawingCanvas c){
@@ -14,4 +15,5 @@ public class Frog{
   public boolean overlaps(VisibleImage vehicleImage){
     return frogImage.overlaps(vehicleImage);
   }
+  
 }
