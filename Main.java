@@ -102,6 +102,22 @@ public class Main extends WindowController implements KeyListener{
    }
  public void	keyPressed(KeyEvent e)
   {
+    if(e.getKeyChar()=='a' ||e.getKeyChar()== 'A')
+    {
+      jose.hop("l");
+    }
+    else if(e.getKeyChar()=='w' ||e.getKeyChar()== 'W')
+    {
+      jose.hop("u");
+    }
+    else if(e.getKeyChar()=='s' ||e.getKeyChar()== 'S')
+    {
+      jose.hop("b");
+    }
+    else if(e.getKeyChar()=='d' ||e.getKeyChar()== 'D')
+    {
+      jose.hop("r");
+    }
     
   }
     public void	keyReleased(KeyEvent e)

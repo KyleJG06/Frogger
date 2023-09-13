@@ -5,7 +5,7 @@ import java.awt.*;
 public class Frog{
   private VisibleImage frogImage;
   private static final double FROG_HEIGHT = 48;
-  private int x, y;
+
 
 
   public Frog(Image i, DrawingCanvas c){
@@ -14,6 +14,25 @@ public class Frog{
 
   public boolean overlaps(VisibleImage vehicleImage){
     return frogImage.overlaps(vehicleImage);
+
+    
   }
-  
+  public void hop(String direction){
+      if(direction.equals("l"))
+      {
+        frogImage.move(-10, 0);
+      }
+    else if(direction.equals("u"))
+      {
+        frogImage.move(0, 10);
+      }
+    else if(direction.equals("b"))
+      {
+        frogImage.move(0, -10);
+      }
+    else if(direction.equals("r"))
+      {
+        frogImage.move(10, 0);
+      }
+    }
 }
