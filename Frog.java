@@ -24,11 +24,11 @@ public class Frog{
       }
     else if(direction.equals("u"))
       {
-        frogImage.move(0, 10);
+        frogImage.move(0, -10);
       }
     else if(direction.equals("b"))
       {
-        frogImage.move(0, -10);
+        frogImage.move(0, 10);
       }
     else if(direction.equals("r"))
       {
