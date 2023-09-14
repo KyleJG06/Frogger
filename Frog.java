@@ -35,4 +35,14 @@ public class Frog{
         frogImage.move(10, 0);
       }
     }
+  /*public boolean isAlive(boolean alive){
+    alive = true;
+   if(overlaps){
+     System.out.println("OUCH!");
+      alive = false;
+   }
+    return alive;
+    
+  }
+  */
 }
