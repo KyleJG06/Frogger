@@ -9,7 +9,7 @@ public class Frog{
 
 
   public Frog(Image i, DrawingCanvas c){
-    frogImage = new VisibleImage(i, new Location(10, 10), c);
+    frogImage = new VisibleImage(i, new Location(20, 20), c);
   }
 
   public boolean overlaps(VisibleImage vehicleImage){
@@ -17,32 +17,24 @@ public class Frog{
 
     
   }
+  
   public void hop(String direction){
       if(direction.equals("l"))
       {
-        frogImage.move(-10, 0);
+        frogImage.move(-50, 0);
       }
     else if(direction.equals("u"))
       {
-        frogImage.move(0, -10);
+        frogImage.move(0, -50);
       }
     else if(direction.equals("b"))
       {
-        frogImage.move(0, 10);
+        frogImage.move(0, 50);
       }
     else if(direction.equals("r"))
       {
-        frogImage.move(10, 0);
+        frogImage.move(50, 0);
       }
     }
-  /*public boolean isAlive(boolean alive){
-    alive = true;
-   if(overlaps){
-     System.out.println("OUCH!");
-      alive = false;
-   }
-    return alive;
-    
-  }
-  */
+  
 }
