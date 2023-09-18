@@ -36,5 +36,22 @@ public class Frog{
         frogImage.move(50, 0);
       }
     }
+
+
+  public void kill(){
+    /*if(overlaps){
+      //kill
+      System.out.print("ded");
+      //remove 1 life
+      //make nested for loop to check if we have lifes
+    }*/
+  }
+  public void reincarnate(){
+    
+  }
+  public boolean isAlive(){
+    return true;
+  }
+  
   
 }
