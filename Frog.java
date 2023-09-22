@@ -5,6 +5,8 @@ import java.awt.*;
 public class Frog{
   private VisibleImage frogImage;
   private static final double FROG_HEIGHT = 48;
+  private int lives = 3;
+  private int score = 0;
 
 
 
@@ -39,18 +41,23 @@ public class Frog{
 
 
   public void kill(){
-    /*if(overlaps){
+    
       //kill
-      System.out.print("ded");
-      //remove 1 life
-      //make nested for loop to check if we have lifes
-    }*/
+      frogImage.hide();
+    
+      System.out.println("OUCH");
+    
   }
   public void reincarnate(){
+    frogImage.moveTo(20,20);
+    frogImage.show();
     
   }
   public boolean isAlive(){
-    return true;
+    if(frogImage.isHidden() == false){
+      return true;
+    }
+    return false;
   }
   
   
