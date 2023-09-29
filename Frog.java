@@ -11,11 +11,18 @@ public class Frog{
 
 
   public Frog(Image i, DrawingCanvas c){
-    frogImage = new VisibleImage(i, new Location(20, 20), c);
+    frogImage = new VisibleImage(i, new Location(100, 100), c);
   }
 
   public boolean overlaps(VisibleImage vehicleImage){
-    return frogImage.overlaps(vehicleImage);
+    if(frogImage.overlaps(vehicleImage)){
+      kill();
+      return true;
+    }
+    else{
+      return false;
+    }
+    
 
     
   }
@@ -44,7 +51,6 @@ public class Frog{
     
       //kill
       frogImage.hide();
-    
       System.out.println("OUCH");
     
   }
@@ -60,5 +66,7 @@ public class Frog{
     return false;
   }
   
-  
+  public VisibleImage getFrog(){
+    return frogImage;
+  }
 }
