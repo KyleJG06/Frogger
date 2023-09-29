@@ -15,7 +15,7 @@ public class Main extends WindowController implements KeyListener{
    // Constants defining the locations of the background components
    private static final double HIGHWAY_LEFT = 0;
    private static final double HIGHWAY_RIGHT = HIGHWAY_LEFT + HIGHWAY_LENGTH;
-   private static final double HIGHWAY_TOP = 0;
+   private static final double HIGHWAY_TOP = 160;
    private static final double HIGHWAY_BOTTOM = 600;
    
    // Constants describing the lines on the highway
@@ -31,6 +31,7 @@ public class Main extends WindowController implements KeyListener{
    
    public static void main(String[] args) { 
    new Main().startController(800,600); 
+     //lane size is 440
 	} 
    
    public void begin()
@@ -48,7 +49,7 @@ public class Main extends WindowController implements KeyListener{
       while (whichLine < NUM_LANES) {
         if (whichLine == NUM_LANES / 2) {
            // The middle line is a no passing line
-           drawNoPassingLine (HIGHWAY_TOP + (whichLine * LANE_WIDTH) - 
+           drawNoPassingLine (HIGHWAY_TOP  + (whichLine * LANE_WIDTH) - 
                                                        (LINE_SPACING / 2 + LINE_WIDTH));
         }
         else {
@@ -59,7 +60,7 @@ public class Main extends WindowController implements KeyListener{
       
       // ADD YOUR CODE TO CREATE THE FROG AND THE LANES
      jose = new Frog(getImage("froggy.gif"), canvas);
-     yippy = new Car(getImage("jeep_right.gif"), 25, 25, 5.0, canvas, jose);
+     yippy = new Car(getImage("jeep_right.gif"), 25, 25, 0.15, canvas, jose);
 
 
     
